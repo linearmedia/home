@@ -39,10 +39,8 @@
 						<li><a href="services.html">Palvelut</a></li>
 						<li><a href="contact.html">Ota yhteyttä</a></li>
 					</ul>
-					<ul class="icons">
-						
-						
-						<li><a href="https://www.instagram.com/linear_media/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<ul class="icons alt">
+						<li><a href="https://instagram.com/linear_media" class="icon brands fa-instagram"><span the="label">Instagram</span></a></li>
 					</ul>
 				</nav>
                 <!-- Main -->
@@ -54,12 +52,45 @@
                                 <div class="content">
                                     <div class="inner">
                                         <h2>Linear Median tarina</h2>
-                                        <p>Delivering impactful social media strategies and creative solutions tailored for each unique brand.</p>
-                                        <!-- Add more content or an image/video here -->
+                                        <p>
+                                            Linear Media syntyi kahden visionäärisen yrittäjän, Stephanin ja Bornan, intohimosta digitaalisen markkinoinnin maailmaan. Olemme suomalainen sosiaalisen median markkinointiin erikoistunut toimisto, joka on omistautunut auttamaan yrityksiä kasvamaan ja erottumaan digitaalisessa ympäristössä.
+                                        </p>
+                                        <p>
+                                            Matkamme alkoi yksinkertaisesta ajatuksesta: tuoda luovuutta ja tehokkuutta sosiaalisen median markkinointiin. Ymmärrämme, että jokainen yritys on ainutlaatuinen, ja siksi räätälöimme palvelumme vastaamaan asiakkaidemme yksilöllisiä tarpeita. Stefun ja Bornan yhteinen visio ja kattava asiantuntemus alalta ohjaavat meitä tarjoamaan innovatiivisia ja tuloksellisia ratkaisuja.
+                                        </p>
+                        
+                                        <!-- Hidden content starts here -->
+                                        <div id="moreText" style="display: none;">
+                                            <p>
+                                                Linear Median sydämessä on intohimo ja sitoutuminen asiakkaidemme menestykseen. Me uskomme avoimeen kommunikaatioon ja läpinäkyvyyteen, mikä auttaa meitä rakentamaan pitkäkestoisia ja luottamuksellisia suhteita asiakkaidemme kanssa. Meidän tehtävämme on varmistaa, että asiakkaidemme ääni kuuluu kovaa ja selvää digitaalisessa maailmassa.
+                                            </p>
+                                            <p>
+                                                Jokainen projekti Linear Mediassa on ainutkertainen seikkailu. Me emme pelkästään seuraa digitaalisen markkinoinnin trendejä – me luomme niitä. Olipa kyseessä sitten brändin rakentaminen, sosiaalisen median hallinta tai mainoskampanjat, meidän tiimimme on valmis ottamaan haasteen vastaan ja viemään yrityksesi uudelle tasolle.
+                                            </p>
+                                        </div>
+                                        <!-- Hidden content ends here -->
+                        
+                                        <!-- Read More/Less button -->
+                                        <button id="readMoreBtn" onclick="toggleText()">Lue lisää</button>
                                     </div>
                                 </div>
                             </section>
                         </section>
+                        
+                        <script>
+                            function toggleText() {
+                                var moreText = document.getElementById("moreText");
+                                var btnText = document.getElementById("readMoreBtn");
+                        
+                                if (moreText.style.display === "none") {
+                                    moreText.style.display = "block";
+                                    btnText.innerHTML = "Näytä vähemmän"; 
+                                } else {
+                                    moreText.style.display = "none";
+                                    btnText.innerHTML = "Lue lisää"; 
+                                }
+                            }
+                        </script>
 
                         <!-- Section Two - Services -->
                         <section id="two" class="spotlights">
@@ -67,19 +98,75 @@
                                 <div class="content">
                                     <div class="inner">
                                         <h2>Tiimimme</h2>
-                                        <p>Explore our range of services designed to elevate your brand's digital presence.</p>
-                                        <!-- List services with brief descriptions -->
+                                        <p><b>Linear Median perustajat</b></p>
+                                        
+                                        <!-- Profiles -->
+                                        <div style="display: flex; align-items: center; justify-content: space-around; padding: 20px;">
+                        
+                                            <!-- Profile 1 -->
+                                            <div style="text-align: center;">
+                                                <a href="https://www.linkedin.com/in/borna-jamali/" target="_blank">
+                                                    <img src="images/profile_1.png" alt="Profile Picture 1" style="width: 250px; height: 250px; border-radius: 50%; margin-bottom: 10px;"/>
+                                                </a>
+                                                <p style="cursor: pointer; margin-top: 5px;" onclick="toggleInfo('info1')">
+                                                    Borna Jamali <span style="color: #0077B5;">&#9432;</span>
+                                                </p>
+                                                <div id="info1" style="display: none; border: 1px solid #ccc; padding: 15px; background-color: #f9f9f9; max-width: 500px; margin-top: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); word-wrap: break-word; text-align: left; line-height: 1.6; white-space: pre-line;">
+                                                    <p>Moikka, olen Borna ja tällä hetkellä opiskelen datatieteen maisteriohjelmassa Helsingin yliopistossa, keskittyen erityisesti sosiaalisen median markkinointiin ja analytiikkaan. Minulla on vahva intohimo sosiaalisen median strategioiden kehittämiseen ja olen erikoistunut datan hyödyntämiseen.</p>
+                                                </div>
+                                            </div>
+                        
+                                            <!-- Profile 2 -->
+                                            <div style="text-align: center;">
+                                                <a href="https://www.linkedin.com/in/stephan-andonov-764330254/" target="_blank">
+                                                    <img src="images/profile_2.png" alt="Profile Picture 2" style="width: 220px; height: 220px; border-radius: 50%; margin-bottom: 10px;"/>
+                                                </a>
+                                                <p style="cursor: pointer; margin-top: 5px;" onclick="toggleInfo('info2')">
+                                                    Stephan Andonov <span style="color: #0077B5;">&#9432;</span>
+                                                </p>
+                                                <div id="info2" style="display: none; border: 1px solid #ccc; padding: 15px; background-color: #f9f9f9; max-width: 500px; margin-top: 5px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); word-wrap: break-word; text-align: left; line-height: 1.6; white-space: pre-line;">
+                                                    <p>Hei! Opiskelen Helsingin Yliopistossa tietojenkäsittelytiedettä. Teen ohella markkinointihommia pienyrityksille hyödyntäen sosiaalista mediaa.</p>
+                                                </div>
+                                            </div>
+                        
+                                        </div>
                                     </div>
                                 </div>
                             </section>
                         </section>
 
+
+                        <style>
+                            .hidden-container {
+                              display: none;
+                              border: 1px solid #ccc;
+                              padding: 10px;
+                              background-color: #f9f9f9;
+                              width: 500px;
+                              margin-top: 5px;
+                              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                              word-wrap: break-word;
+                              text-align: justify;
+                            }
+                          </style>
+
+                        <script>
+                        function toggleInfo(infoId) {
+                            var info = document.getElementById(infoId);
+                            if (info.style.display === "none") {
+                                info.style.display = "block";
+                            } else {
+                                info.style.display = "none";
+                            }
+                        }
+                        </script>
+
                         <!-- Section Three - Call to Action -->
                         <section id="three" class="wrapper style3 special">
                             <div class="inner">
                                 <header class="major">
-                                    <h2>Ready to Elevate Your Brand?</h2>
-                                    <p>Connect with us and let’s create something extraordinary together!</p>
+                                    <h2>Valmiina kohottamaan brändiäsi?</h2>
+                                    <p>Liity mukaan matkaamme, kun kirjoitamme yhdessä seuraavaa lukua menestystarinaasi. Linear Media – siellä, missä luovuus ja strategia kohtaavat.</p>
                                 </header>
                                 <ul class="actions">
                                     <li><a href="contact.html" class="button primary">Ota meihin yhteyttä</a></li>
